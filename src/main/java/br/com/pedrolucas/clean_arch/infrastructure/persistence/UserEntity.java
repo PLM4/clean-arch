@@ -1,16 +1,19 @@
 package br.com.pedrolucas.clean_arch.infrastructure.persistence;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
 
-@Table("users")
 public class UserEntity {
         @Id
         private Long id;
         private String name;
         private String password;
         private String email;
-        public UserEntity() {}
+
+        public UserEntity(String name, String password, String email) {
+            this.name = name;
+            this.password = password;
+            this.email = email;
+        }
 
         public String getPassword() {
             return password;
