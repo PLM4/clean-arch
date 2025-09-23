@@ -17,7 +17,7 @@ public class UserRepositoryGateway implements UserGateway {
     @Override
     public User createUser(User userDomainObj) {
         UserEntity userEntity = userEntityMapper.toEntity(userDomainObj);
-        UserEntity saveObj = userRepository.save(userEntity);
-        return userEntityMapper.toDomainObj(saveObj);
+        UserEntity savedObj = userRepository.save(userEntity);
+        return userEntityMapper.toDomainObj(savedObj);
     }
 }
