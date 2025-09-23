@@ -9,9 +9,9 @@ import br.com.pedrolucas.clean_arch.model.User;
 import br.com.pedrolucas.clean_arch.service.UserService;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("users")
 public class UserController{
-    private UserService userService;
+    private final UserService userService;
 
     public UserController(UserService userService){
         this.userService = userService;

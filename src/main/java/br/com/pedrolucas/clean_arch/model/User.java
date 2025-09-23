@@ -1,12 +1,14 @@
 package br.com.pedrolucas.clean_arch.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
+@Table("users")
 public class User {
     @Id
     private Long id;
-    private String password;
     private String name;
+    private String password;
     private String email;
     
     public User() {}

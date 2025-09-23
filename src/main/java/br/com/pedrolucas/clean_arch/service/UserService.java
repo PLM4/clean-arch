@@ -6,7 +6,7 @@ import br.com.pedrolucas.clean_arch.repository.UserRepository;
 
 @Service
 public class UserService  {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository){
         this.userRepository = userRepository;
