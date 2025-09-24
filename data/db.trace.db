@@ -1,0 +1,18 @@
+2025-09-23 22:55:12.328479-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE [*]if EXIST users"; expected "identifier"; SQL statement:
+DROP TABLE if EXIST users [42001-232]
+2025-09-23 22:55:22.676936-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE [*]if EXIST ""users"""; expected "identifier"; SQL statement:
+DROP TABLE if EXIST "users" [42001-232]
+2025-09-23 23:01:28.316256-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO "USER" ("EMAIL", "NAME", "PASSWORD") VALUES (?, ?, ?) [42102-232]
+2025-09-23 23:05:59.191732-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+INSERT INTO "USER" ("EMAIL", "NAME", "PASSWORD") VALUES (?, ?, ?) [42102-232]
+2025-09-23 23:07:21.787649-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]USER ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE )"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS USER ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE ) [42001-232]
+2025-09-23 23:09:26.857751-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]USER ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE )"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS USER ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL UNIQUE ) [42001-232]

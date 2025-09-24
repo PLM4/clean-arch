@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS "users" (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE
+CREATE TABLE IF NOT EXISTS `user` (
+  id bigint AUTO_INCREMENT primary key,
+  name varchar(255) not null,
+  password varchar(255) not null,
+  email varchar(255) not null
 );

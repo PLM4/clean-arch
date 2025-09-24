@@ -1,7 +1,9 @@
 package br.com.pedrolucas.clean_arch.infrastructure.persistence;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
+@Table("USER")
 public class UserEntity {
         @Id
         private Long id;
